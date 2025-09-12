@@ -26,7 +26,7 @@
 
 ## 🚀 Instalación
 
-1. Descarga la última versión desde [itch.io](https://tugame.itch.io/guardian-of-the-last-tree)
+1. Descarga la última versión desde [itch.io](https://giod3v.itch.io/guardian-of-the-last-tree)
 2. Descomprime el archivo ZIP
 3. Ejecuta `GuardianOfTheLastTree.exe`
 
