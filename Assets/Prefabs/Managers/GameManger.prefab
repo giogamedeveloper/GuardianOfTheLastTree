@@ -49,8 +49,11 @@ MonoBehaviour:
   tankController: {fileID: 0}
   expPlayer: {fileID: 0}
   dataManager: {fileID: 0}
-  sceneController: {fileID: 1262331286133780437}
+  sceneController: {fileID: 2314205401247212611, guid: a75bbcf614d1273489996f3c65041089, type: 3}
   gameController: {fileID: 0}
+  attackMutant: {fileID: 0}
+  attackVampire: {fileID: 0}
+  bossDead: 0
   level: 0
   playerHealth: {fileID: 0}
   projectile: {fileID: 4164468589830131503, guid: 3095b8e5018c71d4b8ca26501e8d0550, type: 3}
@@ -86,3 +89,4 @@ MonoBehaviour:
   pauseCanvasGroup: {fileID: 0}
   hudCanvasGroup: {fileID: 0}
   settingsCanvasGroup: {fileID: 0}
+  _isActive: 0

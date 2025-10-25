@@ -180,9 +180,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.65
-  m_Height: 3
+  m_Height: 2.5
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 1.3252378, z: 0}
 --- !u!195 &5891376629813950091
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4843614119862825980}
   m_Enabled: 1
-  m_AgentTypeID: -1923039037
+  m_AgentTypeID: 0
   m_Radius: 0.65
   m_Speed: 3
   m_Acceleration: 10
@@ -502,8 +502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 2427715135103105389, guid: 94beb9ef548c5cf43811dce029e4d313, type: 3}
-  player: {fileID: 5177443497931088754, guid: 7d8c6bc95af5d714ca5b48123dd851b0, type: 3}
-  speed: 5
 --- !u!1 &5027681749860825972
 GameObject:
   m_ObjectHideFlags: 0

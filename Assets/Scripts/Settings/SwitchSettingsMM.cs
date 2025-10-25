@@ -7,6 +7,9 @@ public class SwitchSettingsMM : MonoBehaviour
     CanvasGroup mainCanvasGroup;
 
     [SerializeField]
+    CanvasGroup pauseCanvasGroup;
+
+    [SerializeField]
     CanvasGroup settingsCanvasGroup;
 
 
@@ -16,6 +19,7 @@ public class SwitchSettingsMM : MonoBehaviour
     private static SwitchSettingsMM _instance;
     public static SwitchSettingsMM Instance => _instance;
     public bool _changeLenguage;
+
     [SerializeField]
     private bool _isActive;
 
@@ -45,24 +49,15 @@ public class SwitchSettingsMM : MonoBehaviour
         mainCanvasGroup.interactable = !_isActive;
         mainCanvasGroup.blocksRaycasts = !_isActive;
         mainCanvasGroup.alpha = _isActive ? 0 : 1;
+        if (pauseCanvasGroup != null)
+        {
+            pauseCanvasGroup.gameObject.SetActive(!_isActive);
+            pauseCanvasGroup.interactable = !_isActive;
+            pauseCanvasGroup.blocksRaycasts = !_isActive;
+            pauseCanvasGroup.alpha = _isActive ? 0 : 1;
+        }
         scene.SetActive(!_isActive);
     }
-
-    
-    // public void ChangeToGame()
-    // {
-    //     SceneController.Instance.FadeAndLoadScene("Game");
-    // }
-    //
-    // public void ChangeToAchievements()
-    // {
-    //     SceneController.Instance.FadeAndLoadScene("Achievements");
-    // }
-    //
-    // public void ChangeToMainMenu()
-    // {
-    //     SceneController.Instance.FadeAndLoadScene("MainMenu");
-    // }
 
     public void ExitGame()
     {

@@ -20,15 +20,15 @@ public class AudioSettingsController : MonoBehaviour
 
     public void TextDescriptionMusic()
     {
-        descriptionSFX.gameObject.SetActive(true);
-        descriptionMusic.gameObject.SetActive(false);
+        descriptionSFX.gameObject.SetActive(false);
+        descriptionMusic.gameObject.SetActive(true);
         descriptionGeneral.gameObject.SetActive(false);
     }
 
     public void TextDescriptionSFX()
     {
-        descriptionSFX.gameObject.SetActive(false);
-        descriptionMusic.gameObject.SetActive(true);
+        descriptionSFX.gameObject.SetActive(true);
+        descriptionMusic.gameObject.SetActive(false);
         descriptionGeneral.gameObject.SetActive(false);
 
     }
