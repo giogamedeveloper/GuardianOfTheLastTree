@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<main>
+    <lang>
+        <string key="button_Start">Iniciar Partida</string>
+        <string key="button_tutorial">Tutorial</string>
+        <string key="button_Settings">Opciones</string>
+        <string key="button_Achievement">Logros</string>
+        <string key="button_ExitGame">Salir del juego</string>
+        <!--Settings-->
+        <string key="text_Audio">Audio</string>
+        <string key="text_Graficos">Gráficos y lenguaje</string>
+        <!--Settings/Audio-->
+        <string key="button_GeneralMusic">Volúmen general</string>
+        <string key="button_Musica">Volúmen de la música</string>
+        <string key="button_SFX">Volumen de los efectos</string>
+        <string key="text_GeneralMusic">Ajusta el volúmen general del juego.</string>
+        <string key="text_Musica">Ajusta el volúmen general de la música.</string>
+        <string key="text_SFX">Ajusta el volúmen de los efectos de sonido.</string>
+        <!--Settings/Graficos y lenguaje-->
+        <string key="button_Idioma">Idioma</string>
+        <string key="option_IdiomaI">Español</string>
+        <string key="option_IdiomaII">Inglés</string>
+        <string key="button_Graficos">Gráficos</string>
+        <string key="option_GraficosI">Alto</string>
+        <string key="option_GraficosII">Medio</string>
+        <string key="option_GraficosIII">Bajo</string>
+        <string key="button_Resolucion">Resolucción</string>
+        <string key="text_Idioma">Puedes elegir entre español o inglés para jugar en tu idioma preferido.</string>
+        <string key="text_Graficos">Ajusta el gráfico con el que te sientas más cómodo al jugar.</string>
+        <string key="text_Resolucion">Ajusta la resolución con el que te sientas más cómodo al jugar.</string>
+        <!--Como jugar-->
+        <string key="text_Movimiento">Movimiento</string>
+        <string key="text_Agacharse">Agacharse</string>
+        <string key="text_Interaccion">Interactuar</string>
+        <string key="text_Saltar">Saltar</string>
+        <string key="text_Mapa">Minimapa / mapa</string>
+        <string key="text_Linterna">Encender / apagar linterna</string>
+        <string key="text_Quest">Abrir lista de misiones</string>
+        <!--Logros-->
+        <string key="logroI">¡Lo lograste!</string>
+        <string key="logroII">Maestro Solución</string>
+        <string key="logroIII">Rápido y astuto</string>
+        <string key="logroIV">Paciencia infinita</string>
+        <string key="logroV">Desafío Total</string>
+        <string key="logroVI">Reto Completado</string>
+        <string key="logro1DDescripcion">Completa tu primera misión</string>
+        <string key="logroIIDescripcion">Completa una misión sin errores</string>
+        <string key="logroIIIDescripcion">Resuelve un puzzle en menos de diez min</string>
+        <string key="logroIVDescripcion">Juega durante treinta minutos sin abandonar</string>
+        <string key="logroVDescripcion">Completa todas las misiones en un solo intento</string>
+        <string key="logroVIDescripcion">Resuelve todos los puzzles sin que te atrapen</string>
+        <!--Menú de pausa-->
+        <string key="button_Back">Regresar</string>
+        <string key="button_Reanude">Reanudar juego</string>
+        <string key="button_Restar">Reinciar juego</string>
+        <!--Tutorial-->
+    </lang>
+</main>

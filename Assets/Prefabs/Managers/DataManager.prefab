@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &551442899856574213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7637655597737691315}
+  - component: {fileID: 7820131992502773479}
+  - component: {fileID: 6887531143747374596}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7637655597737691315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551442899856574213}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7820131992502773479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551442899856574213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c311414cc66de8b439a95c4a3ac2b8ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    statistics:
+    - code: Kill
+      value: 0
+    - code: Level
+      value: 0
+    - code: Fall
+      value: 0
+    - code: Skill
+      value: 0
+    - code: Tutorial
+      value: 0
+    achievements:
+    - name: Noob Killer
+      statCode: Kill
+      imageName: DeathEnemiesBronce
+      imageNameBase: DeathEnemies
+      description: Kill 20 enemies
+      targetAmount: 20
+      unlocked: 0
+    - name: Super Killer
+      statCode: Kill
+      imageName: DeathEnemiesSilver
+      imageNameBase: DeathEnemies
+      description: Kill 50 enemies
+      targetAmount: 50
+      unlocked: 0
+    - name: Ultra Killer
+      statCode: Kill
+      imageName: DeathEnemiesGold
+      imageNameBase: DeathEnemies
+      description: Kill 150 enemies
+      targetAmount: 150
+      unlocked: 0
+    - name: First Hurdle
+      statCode: Level
+      imageName: LevelBronze
+      imageNameBase: Level
+      description: You completed the first level of the game
+      targetAmount: 1
+      unlocked: 0
+    - name: Climbing levels
+      statCode: Level
+      imageName: LevelSilver
+      imageNameBase: Level
+      description: You completed the second level of the game
+      targetAmount: 2
+      unlocked: 0
+    - name: Level Master
+      statCode: Level
+      imageName: LevelGold
+      imageNameBase: Level
+      description: You completed the third level of the game
+      targetAmount: 3
+      unlocked: 0
+    - name: Fallen
+      statCode: Fall
+      imageName: muerteBronce
+      imageNameBase: muerte
+      description: You have been defeated by your enemies 10 times
+      targetAmount: 10
+      unlocked: 0
+    - name: Play, don't just die
+      statCode: Fall
+      imageName: muerteSilver
+      imageNameBase: muerte
+      description: You have been defeated by your enemies 20 times
+      targetAmount: 20
+      unlocked: 0
+    - name: Do you just die?
+      statCode: Fall
+      imageName: muerteGold
+      imageNameBase: muerte
+      description: You have been defeated by your enemies 30 times
+      targetAmount: 30
+      unlocked: 0
+    - name: You don't like skills
+      statCode: Skill
+      imageName: noMisilBronze
+      imageNameBase: noMisil
+      description: Complete the first level without using skills
+      targetAmount: 0
+      unlocked: 0
+    - name: Ultra Killer
+      statCode: Skill
+      imageName: noMisilSilver
+      imageNameBase: noMisil
+      description: Complete the second level without using skills
+      targetAmount: 0
+      unlocked: 0
+    - name: Ultra Killer
+      statCode: Skill
+      imageName: noMisilGold
+      imageNameBase: noMisil
+      description: Complete the third level without using skills
+      targetAmount: 0
+      unlocked: 0
+  fileName: data.dat
+--- !u!114 &6887531143747374596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551442899856574213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77debebdaec204ab111b120c9b0375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
