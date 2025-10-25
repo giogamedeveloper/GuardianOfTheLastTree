@@ -12,7 +12,7 @@
         <!--Settings/Audio-->
         <string key="button_GeneralMusic">Volúmen general</string>
         <string key="button_Musica">Volúmen de la música</string>
-        <string key="button_SFX">Volumen de los efectos</string>
+        <string key="button_SFX">Volúmen de los efectos</string>
         <string key="text_GeneralMusic">Ajusta el volúmen general del juego.</string>
         <string key="text_Musica">Ajusta el volúmen general de la música.</string>
         <string key="text_SFX">Ajusta el volúmen de los efectos de sonido.</string>

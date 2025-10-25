@@ -15,7 +15,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private CanvasGroup settingsCanvasGroup;
 
-   public bool _isActive;
+    public bool _isActive;
 
     // Update is called once per frame
     public void SetPause(bool isActive)
@@ -48,7 +48,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Settings()
     {
-        _isActive = !_isActive;
         settingsCanvasGroup.alpha = _isActive ? 1 : 0;
         settingsCanvasGroup.interactable = _isActive;
         settingsCanvasGroup.blocksRaycasts = _isActive;
@@ -58,6 +57,7 @@ public class PauseMenu : MonoBehaviour
         hudCanvasGroup.interactable = !_isActive;
         hudCanvasGroup.blocksRaycasts = !_isActive;
         hudCanvasGroup.alpha = _isActive ? 0 : 1;
+        _isActive = !_isActive;
         ToggleInputs(!_isActive);
     }
 }

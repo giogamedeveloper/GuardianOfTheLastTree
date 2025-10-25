@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3960425689710287934}
   - component: {fileID: 330608160472330399}
+  - component: {fileID: 6480313042965936437}
   m_Layer: 5
   m_Name: EffectsSlider
   m_TagString: Untagged
@@ -102,6 +103,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6480313042965936437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171003222359774271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2519398422625798389}
+          m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+          m_MethodName: TextDescriptionSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &536724624213952059
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,11 +452,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7961578633493037394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -340, y: 0}
-  m_SizeDelta: {x: 418.5028, y: 156.9268}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 201}
+  m_SizeDelta: {x: 0, y: 156.9268}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5368313796515260824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,6 +1017,7 @@ GameObject:
   - component: {fileID: 3612634474659806333}
   - component: {fileID: 9173503292914686131}
   - component: {fileID: 7436774145642507424}
+  - component: {fileID: 4194213283262552095}
   m_Layer: 5
   m_Name: Button Grl Volume
   m_TagString: Untagged
@@ -1095,19 +1126,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9173503292914686131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2519398422625798389}
-        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: TextDescriptionGeneral
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &4194213283262552095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894049824225039734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2519398422625798389}
+          m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+          m_MethodName: TextDescriptionGeneral
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2049828573600937995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4471349913633678590}
   - component: {fileID: 7766351951396998944}
+  - component: {fileID: 129471750085537866}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -1206,6 +1255,35 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &129471750085537866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049828573600937995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8029999367150342303}
+          m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
+          m_MethodName: Resolution
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2197027797126523763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,7 +1359,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 860, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &9100930669441520965
 CanvasRenderer:
@@ -1483,7 +1561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5335325455821385919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1498,9 +1576,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4469330396696911338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 641.6667, y: -25}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1090219215896551357
@@ -1655,7 +1733,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 860, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &8856407443644934040
 CanvasRenderer:
@@ -1760,7 +1838,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 860, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &5271778045621054482
 CanvasRenderer:
@@ -2076,6 +2154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2198871226227839844}
   - component: {fileID: 573528557901208416}
+  - component: {fileID: 4250128883044765473}
   m_Layer: 5
   m_Name: MusicSlider
   m_TagString: Untagged
@@ -2168,6 +2247,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4250128883044765473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3276395597716099177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2519398422625798389}
+          m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+          m_MethodName: TextDescriptionMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3489472475868619850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,7 +3559,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 860, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &9162155864925541922
 CanvasRenderer:
@@ -3529,6 +3637,7 @@ GameObject:
   - component: {fileID: 5215171646929695372}
   - component: {fileID: 1793191517598603320}
   - component: {fileID: 8397791152569717760}
+  - component: {fileID: 8279622502925142221}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -3669,6 +3778,35 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_AlphaFadeSpeed: 0.15
+--- !u!114 &8279622502925142221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5139293502679008789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8029999367150342303}
+          m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
+          m_MethodName: Idioma
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5180232164961024109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,6 +3819,7 @@ GameObject:
   - component: {fileID: 8681319369913269258}
   - component: {fileID: 4049633043093910198}
   - component: {fileID: 6194566298034550306}
+  - component: {fileID: 8455294370033386979}
   m_Layer: 5
   m_Name: Button Music
   m_TagString: Untagged
@@ -3789,19 +3928,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4049633043093910198}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2519398422625798389}
-        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: TextDescriptionMusic
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &8455294370033386979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5180232164961024109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2519398422625798389}
+          m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+          m_MethodName: TextDescriptionMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5209405450955822251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +4045,7 @@ GameObject:
   - component: {fileID: 590713017028740864}
   - component: {fileID: 5090327563288566459}
   - component: {fileID: 7281370192220393146}
+  - component: {fileID: 6783594070806708494}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -4032,6 +4189,35 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_AlphaFadeSpeed: 0.15
+--- !u!114 &6783594070806708494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216481228128029721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8029999367150342303}
+          m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
+          m_MethodName: Graphics
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5237611712192805789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,7 +4329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 220, y: -55}
+  m_AnchoredPosition: {x: 45.3, y: -28}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4796957063217438035
@@ -4819,6 +5005,7 @@ GameObject:
   - component: {fileID: 3968326112066395130}
   - component: {fileID: 6569498898419609841}
   - component: {fileID: 2681257730696409828}
+  - component: {fileID: 7578730519816365147}
   m_Layer: 5
   m_Name: Button SFX
   m_TagString: Untagged
@@ -4927,19 +5114,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6569498898419609841}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2519398422625798389}
-        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
-        m_MethodName: TextDescriptionSFX
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &7578730519816365147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5679360453827494600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2519398422625798389}
+          m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+          m_MethodName: TextDescriptionSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6092207985261782236
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,8 +5156,9 @@ GameObject:
   - component: {fileID: 3985590632559972065}
   - component: {fileID: 2554021418767297875}
   - component: {fileID: 2059302960030692308}
+  - component: {fileID: 2361321327890142019}
   m_Layer: 5
-  m_Name: Button Idioma
+  m_Name: Button Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5060,19 +5265,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2554021418767297875}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8029999367150342303}
-        m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
-        m_MethodName: Graphics
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2361321327890142019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092207985261782236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8029999367150342303}
+          m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
+          m_MethodName: Graphics
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6092597692414533165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,9 +5469,9 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 20
     m_Bottom: 0
-  m_ChildAlignment: 3
+  m_ChildAlignment: 0
   m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -5268,6 +5490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2702073226230839957}
   - component: {fileID: 1336718644649112435}
+  - component: {fileID: 6552197616203642960}
   m_Layer: 5
   m_Name: GeneralSlider
   m_TagString: Untagged
@@ -5360,6 +5583,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6552197616203642960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153644915401166056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2519398422625798389}
+          m_TargetAssemblyTypeName: AudioSettingsController, Assembly-CSharp
+          m_MethodName: TextDescriptionGeneral
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6352860358155191048
 GameObject:
   m_ObjectHideFlags: 0
@@ -5787,7 +6039,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 860, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &2995451716659233623
 CanvasRenderer:
@@ -6266,7 +6518,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 860, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &4678585032608384314
 CanvasRenderer:
@@ -6323,13 +6575,13 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 3
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
+  m_ChildScaleWidth: 1
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
 --- !u!1 &7016446344420172028
@@ -6789,6 +7041,7 @@ GameObject:
   - component: {fileID: 6946499510719151711}
   - component: {fileID: 3459620658029057039}
   - component: {fileID: 5492466361794958032}
+  - component: {fileID: 5683566071296253272}
   m_Layer: 5
   m_Name: Button Idioma
   m_TagString: Untagged
@@ -6897,19 +7150,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3459620658029057039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8029999367150342303}
-        m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
-        m_MethodName: Idioma
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &5683566071296253272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7563152332320005669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8029999367150342303}
+          m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
+          m_MethodName: Idioma
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7573845648154565221
 GameObject:
   m_ObjectHideFlags: 0
@@ -7356,7 +7626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5266600547900191458
@@ -7608,7 +7878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8009,8 +8279,9 @@ GameObject:
   - component: {fileID: 3008091707541497914}
   - component: {fileID: 6715552247577593982}
   - component: {fileID: 1552553621547365176}
+  - component: {fileID: 7743248047260824249}
   m_Layer: 5
-  m_Name: Button Idioma
+  m_Name: Button Resolution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8117,19 +8388,36 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6715552247577593982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8029999367150342303}
-        m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
-        m_MethodName: Resolution
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &7743248047260824249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8074136048969419036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8029999367150342303}
+          m_TargetAssemblyTypeName: GraphicsController, Assembly-CSharp
+          m_MethodName: Resolution
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8245883681320517879
 GameObject:
   m_ObjectHideFlags: 0
