@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         else
         {
             expPlayer.UpdateStatsPlayer(gameController.level, playerTransform);
-            // sceneController.LoadSceneAndSetActive(gameController.level);
+            sceneController.FadeAndLoadScene($"{"level "}" + gameController.level);
         }
     }
 

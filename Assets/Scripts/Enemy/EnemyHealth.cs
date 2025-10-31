@@ -84,7 +84,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable<float>
 
     public void CheckEnemyAndLevel()
     {
-        if (gameObject.name == "EnemyRobot(Clone)")
+        if (gameObject.name == _robotName)
         {
 
             if (GameManager.Instance.gameController.level == 0)
@@ -105,7 +105,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable<float>
             }
             startingHealth += GameData.Instance.enemyRobotStats.Hp;
         }
-        else if (gameObject.name == "MutantEnemy(Clone)")
+        else if (gameObject.name == _mutantName)
         {
 
             if (GameManager.Instance.gameController.level == 0)
@@ -123,7 +123,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable<float>
             }
             startingHealth += GameData.Instance.enemyMutantStats.Hp;
         }
-        else if (gameObject.name == "VampireEnemy(Clone)")
+        else if (gameObject.name == _vampireName)
         {
             if (GameManager.Instance.gameController.level == 0)
             {

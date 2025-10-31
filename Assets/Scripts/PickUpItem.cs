@@ -32,7 +32,6 @@ public class PickUpItem : MonoBehaviour
 
     public void GoToPlayer()
     {
-        Debug.Log(player.position);
         transform.position = Vector3.Lerp(transform.position, player.position, speed * Time.deltaTime);
     }
 

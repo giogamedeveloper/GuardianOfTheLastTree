@@ -26,6 +26,7 @@ public class TankController : MonoBehaviour, IPlayerActions
     public LayerMask pointerLayer;
     public float coins;
     public Transform aimingPivot;
+
     private Vector2 _mousePosition;
     private Vector3 _aimingDirection;
     bool _directionalAiming;
@@ -141,6 +142,7 @@ public class TankController : MonoBehaviour, IPlayerActions
         if (_isShooting) Shoot();
         if (_directionalAiming) DirectionalAimingBehaviour(_aimingDirection);
         else AimingBehaviour(_mousePosition);
+        RotationBehaviour();
         MovementFX();
         AnimationFeed();
 
@@ -279,6 +281,21 @@ public class TankController : MonoBehaviour, IPlayerActions
     {
         yield return new WaitForSeconds(delay);
         rb.AddForce(transform.forward * dashForce, ForceMode.Impulse);
+    }
+
+    private void RotationBehaviour()
+    {
+        // Siempre rotar hacia donde apunta el mouse, independientemente del movimiento
+        Vector3 mouseDirection = aimingPivot.position - transform.position;
+        mouseDirection.y = 0; // Mantener en plano horizontal
+
+        if (mouseDirection.magnitude > 0.1f && !isWalled && grounded)
+        {
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                Quaternion.LookRotation(mouseDirection),
+                rotationSpeed * Time.deltaTime);
+        }
     }
 
     /// <summary>
