@@ -2209,9 +2209,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1733901495436410470, guid: 1b575ea54020ceb45a959ea752183c55, type: 3}
+      propertyPath: poisonPrefab
+      value: 
+      objectReference: {fileID: 1386146591469100987, guid: 3156f1733adaba24d8de7d769fb92a9f, type: 3}
     - target: {fileID: 5912431562344635744, guid: 1b575ea54020ceb45a959ea752183c55, type: 3}
       propertyPath: m_Name
       value: VampireEnemyBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912431562344635744, guid: 1b575ea54020ceb45a959ea752183c55, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5953575145451588421, guid: 1b575ea54020ceb45a959ea752183c55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2861,47 +2869,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4843614119862825980, guid: 2f6b353c0416ac84ea7d3887ddd5a029, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8269103543390996307, guid: 2f6b353c0416ac84ea7d3887ddd5a029, type: 3}
-      propertyPath: startingHealth
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4843614119862825980, guid: 2f6b353c0416ac84ea7d3887ddd5a029, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 468140025}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f6b353c0416ac84ea7d3887ddd5a029, type: 3}
---- !u!1 &468140023 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4843614119862825980, guid: 2f6b353c0416ac84ea7d3887ddd5a029, type: 3}
-  m_PrefabInstance: {fileID: 468140022}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &468140024 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1003358049447190552, guid: 2f6b353c0416ac84ea7d3887ddd5a029, type: 3}
-  m_PrefabInstance: {fileID: 468140022}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &468140025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468140023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7e42d2555be71646a620ef4c008eb9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  missilePrefab: {fileID: 428622575326810800, guid: bfa7d9fd7506c00459fd289821a527c8, type: 3}
-  spawnPoint: {fileID: 468140024}
-  numberOfMissiles: 3
-  spawnRadius: 5
-  parabolaHeight: 2
 --- !u!1 &503627827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12997,12 +12971,16 @@ PrefabInstance:
       objectReference: {fileID: 100785376}
     - target: {fileID: 4905868133900044639, guid: b698ca2e72831da45bd6e4b9fd9c895c, type: 3}
       propertyPath: acceleration
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4905868133900044639, guid: b698ca2e72831da45bd6e4b9fd9c895c, type: 3}
       propertyPath: headRotation
       value: 
       objectReference: {fileID: 1117929050}
+    - target: {fileID: 4905868133900044639, guid: b698ca2e72831da45bd6e4b9fd9c895c, type: 3}
+      propertyPath: movementSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4905868133900044639, guid: b698ca2e72831da45bd6e4b9fd9c895c, type: 3}
       propertyPath: rotationSpeed
       value: 15
@@ -13766,10 +13744,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 103969144907903766, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 176386210981734054, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 304148370335923754, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 330585546}
+    - target: {fileID: 507581182740924313, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 753930888010535550, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351023745071696167, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2637496335250640669, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
       propertyPath: target
       value: 
@@ -13838,6 +13836,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 330585546}
+    - target: {fileID: 6515192540059253988, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599402459949218523, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917767973003027855, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7223540581492532733, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
       propertyPath: playOnAwake
       value: 1
@@ -13869,6 +13879,14 @@ PrefabInstance:
     - target: {fileID: 7224594608663597665, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
       propertyPath: playOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8020944409191585872, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035830015071596763, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6603782898891647419, guid: d05defd0ff0c22f459860a1dea690f9e, type: 3}

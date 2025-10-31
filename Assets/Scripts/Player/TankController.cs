@@ -138,12 +138,12 @@ public class TankController : MonoBehaviour, IPlayerActions
     {
         GroundCheck();
         CollisionPreDetection();
+        MovementFX();
         Movement();
         if (_isShooting) Shoot();
         if (_directionalAiming) DirectionalAimingBehaviour(_aimingDirection);
         else AimingBehaviour(_mousePosition);
         RotationBehaviour();
-        MovementFX();
         AnimationFeed();
 
     }
@@ -227,10 +227,10 @@ public class TankController : MonoBehaviour, IPlayerActions
             isWalk = true;
             Debug.DrawRay(transform.position, rb.linearVelocity);
             //Rotamos el tanque para que mire hacia la dirección a la que apunta la velocidad de movimiento
-            transform.rotation = Quaternion.Slerp(
-                transform.rotation,
-                Quaternion.LookRotation(desiredVelocity),
-                rotationSpeed * Time.deltaTime);
+            // transform.rotation = Quaternion.Slerp(
+            //     transform.rotation,
+            //     Quaternion.LookRotation(desiredVelocity),
+            //     rotationSpeed * Time.deltaTime);
         }
         if ((horizontal == 0 && vertical == 0) || isWalled)
         {

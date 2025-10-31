@@ -368,13 +368,14 @@ GameObject:
   - component: {fileID: 5891376629813950091}
   - component: {fileID: 3311900113453672230}
   - component: {fileID: 8269103543390996307}
+  - component: {fileID: 8408802576102412108}
   m_Layer: 8
   m_Name: EnemyRobotBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4030385021132600116
 Transform:
   m_ObjectHideFlags: 0
@@ -414,9 +415,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.3
-  m_Height: 4
+  m_Height: 4.1803083
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 1.7360549, z: 0}
 --- !u!195 &5891376629813950091
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -630,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ae8ac4d2c069d44bbd446f50698cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 800
+  startingHealth: 20
   _currentHealth: 0
   maxHealth: 0
   _animator: {fileID: 5232972756750542498}
@@ -723,6 +724,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8408802576102412108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4843614119862825980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e42d2555be71646a620ef4c008eb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 428622575326810800, guid: bfa7d9fd7506c00459fd289821a527c8, type: 3}
+  spawnPoint: {fileID: 1003358049447190552}
+  numberOfMissiles: 3
+  spawnRadius: 5
+  parabolaHeight: 2
 --- !u!1 &5027681749860825972
 GameObject:
   m_ObjectHideFlags: 0

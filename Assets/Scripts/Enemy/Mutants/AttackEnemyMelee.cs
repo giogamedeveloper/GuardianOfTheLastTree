@@ -28,6 +28,10 @@ public class AttackEnemyMelee : PoolEntity
     public float delay;
     bool _isAttacking;
 
+    [SerializeField]
+    private bool _isBoss;
+
+
     //Referencia del animator que gestionará la maquina de estados
     public Animator animator;
 
@@ -143,32 +147,21 @@ public class AttackEnemyMelee : PoolEntity
 
     public void AttackMelee()
     {
-
         StartCoroutine(DurationParticle(2f));
-        // Collider[] coliderBuffer = new Collider[1];
-        // Physics.OverlapSphereNonAlloc(
-        //     checkPlayer.position,
-        //     checkSize,
-        //     coliderBuffer,
-        //     playerLayer);
-        // _isEnemyDetected = coliderBuffer[0] != null;
-        // if (_isEnemyDetected && _isAttacking)
-        // {
-        //     if (coliderBuffer[0].TryGetComponent(out IDamageable<float> damageable))
-        //     {
-        //         damageable.TakeDamage(damageAttack, transform.position);
-        //     }
-        // }
-        // else _isAttacking = false;
+        if (_isBoss)
+            Ability();
     }
 
     public void Ability()
     {
         Vector3[] posiciones = new Vector3[]
         {
-            new Vector3(gameObject.transform.position.x+3, gameObject.transform.position.y, gameObject.transform.position.z+3), 
-            new Vector3(gameObject.transform.position.x+5, gameObject.transform.position.y, gameObject.transform.position.z-5),
-            new Vector3(gameObject.transform.position.x+13, gameObject.transform.position.y, gameObject.transform.position.z-13)
+            new Vector3(gameObject.transform.position.x + 3, gameObject.transform.position.y,
+                gameObject.transform.position.z + 3),
+            new Vector3(gameObject.transform.position.x + 5, gameObject.transform.position.y,
+                gameObject.transform.position.z - 5),
+            new Vector3(gameObject.transform.position.x + 13, gameObject.transform.position.y,
+                gameObject.transform.position.z - 13)
         };
 
         float tiempoAviso = 2f; // Tiempo hasta que exploten

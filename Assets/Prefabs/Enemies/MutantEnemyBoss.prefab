@@ -225,7 +225,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4092719388713264047}
   m_Enabled: 1
-  m_AgentTypeID: 658490984
+  m_AgentTypeID: -902729914
   m_Radius: 0.65
   m_Speed: 3
   m_Acceleration: 10
@@ -399,6 +399,7 @@ MonoBehaviour:
   checkPlayer: {fileID: 3019116115847922900}
   _isEnemyDetected: 0
   delay: 1
+  _isBoss: 1
   animator: {fileID: 4563679530741825924}
   attackDistance: 10
   OnInitialize:
