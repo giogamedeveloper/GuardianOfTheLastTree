@@ -1,3 +1,5 @@
+[file name]: .gitignore
+[file content begin]
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -63,10 +65,19 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-
 *.apk
 *.aab
 *.unitypackage
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# ============================
+# IDE CONFIGURATION FOLDERS
+# ============================
+# JetBrains Rider (ya incluido parcialmente arriba)
+.idea/
+
+# Visual Studio Code
+.vscode/
+[file content end]
