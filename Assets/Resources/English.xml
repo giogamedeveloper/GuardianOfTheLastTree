@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<main>
+    <lang>
+        <string key="button_Start">Start Game</string>
+        <string key="button_tutorial">Tutorial</string>
+        <string key="button_Settings">Settings</string>
+        <string key="button_Achievement">Achievements</string>
+        <string key="button_ExitGame">Exit Game</string>
+        <!--Settings-->
+        <string key="text_Audio">Audio</string>
+        <string key="text_GraficosG">Graphics and Language</string>
+        <!--Settings/Audio-->
+        <string key="button_GeneralMusic">Master Volume</string>
+        <string key="button_Musica">Music Volume</string>
+        <string key="button_SFX">SFX Volume</string>
+        <string key="text_GeneralMusic">Adjust the overall game volume.</string>
+        <string key="text_Musica">Adjust the general music volume.</string>
+        <string key="text_SFX">Adjust the sound effects volume.</string>
+        <!--Settings/Graphics and Language-->
+        <string key="button_Idioma">Language</string>
+        <string key="Español">Spanish</string>
+        <string key="Inglés">English</string>
+        <string key="button_Graficos">Graphics</string>
+        <string key="Alto">High</string>
+        <string key="Medio">Medium</string>
+        <string key="Bajo">Low</string>
+        <string key="button_Resolucion">Resolution</string>
+        <string key="text_Idioma">You can choose between Spanish or English to play in your preferred language.</string>
+        <string key="text_Graficos">Adjust the graphics to what you feel most comfortable playing with.</string>
+        <string key="text_Resolucion">Adjust the resolution to what you feel most comfortable playing with.</string>
+        <!--Tutorial-->
+        <string key="text_Movimiento">Welcome to the tutorial, move to the marked area.</string>
+        <string key="text_Shoot">Well done! Now shoot to eliminate a target.</string>
+        <string key="text_Stats">Excellent! You've eliminated the enemy. Press TAB to open statistics and upgrade your character.</string>
+        <string key="text_ShowStats">You've leveled up, press tab to see your statistics</string>
+        <string key="text_Missile">Perfect! Now shoot a missile at the target.</string>
+        <string key="text_Mine">Good job! Now place a mine in the marked area.</string>
+        <string key="text_FinishTuto">Congratulations, you've completed the tutorial!</string>
+        <!--Achievements-->
+        <string key="Noob Killer">Novice Killer</string>
+        <string key="Super Killer">Super Killer</string>
+        <string key="Ultra Killer">Master Killer</string>
+        <string key="First Hurdle">First Hurdle</string>
+        <string key="Climbing levels">Climbing Levels</string>
+        <string key="Level Master">Level Master</string>
+        <string key="Fallen">Fallen</string>
+        <string key="FallenII">Play, Don't Just Die</string>
+        <string key="FallenIII">Do You Just Die?</string>
+        <string key="Sin Ayudas">Without Help</string>
+        <string key="Autosuficiente">Self-Sufficient</string>
+        <string key="Leyenda Pura">Pure Legend</string>
+        <string key="logroIDescripcion">Kill 20 enemies</string>
+        <string key="logroIIDescripcion">Kill 50 enemies</string>
+        <string key="logroIIIDescripcion">Kill 150 enemies</string>
+        <string key="logroIVDescripcion">You completed the first level of the game</string>
+        <string key="logroVDescripcion">You completed the second level of the game</string>
+        <string key="logroVIDescripcion">You completed the third level of the game</string>
+        <string key="logroVIIDescripcion">You have been defeated by your enemies 10 times</string>
+        <string key="logroVIIIDescripcion">You have been defeated by your enemies 20 times</string>
+        <string key="logroIXDescripcion">You have been defeated by your enemies 30 times</string>
+        <string key="logroXDescripcion">Complete the first level without using skills</string>
+        <string key="logroXIDescripcion">Complete the second level without using skills</string>
+        <string key="logroXIIDescripcion">Complete the third level without using skills</string>
+        <!--Pause Menu-->
+        <string key="button_MPause">Pause Menu</string>
+        <string key="button_Back">Back</string>
+        <string key="button_BackMM">Back to Main Menu</string>
+        <string key="button_Reanude">Resume Game</string>
+        <string key="button_Restar">Restart Game</string>
+        <string key="button_Reset">Reset Data</string>
+        <!--Tutorial-->
+    </lang>
+</main>

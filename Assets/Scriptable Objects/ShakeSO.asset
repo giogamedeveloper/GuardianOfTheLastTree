@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16bc9f3c840e8148832b96487c4734c, type: 3}
+  m_Name: ShakeSO
+  m_EditorClassIdentifier: 
+  noiseType: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
+  amplitudCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.0015869141
+      inSlope: 4.165099
+      outSlope: 4.165099
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.02528902
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -3.8081725
+      outSlope: -3.8081725
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.028901756
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  frequencyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.0015869141
+      inSlope: 4.165099
+      outSlope: 4.165099
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.02528902
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -3.8081725
+      outSlope: -3.8081725
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.028901756
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  shakeDuration: 2
