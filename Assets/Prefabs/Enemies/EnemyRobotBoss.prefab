@@ -425,7 +425,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4843614119862825980}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: -902729914
   m_Radius: 0.65
   m_Speed: 2
@@ -467,8 +467,6 @@ MonoBehaviour:
   nav: {fileID: 5891376629813950091}
   animator: {fileID: 5232972756750542498}
   attackDistance: 10
-  enemyProyectil: EnemyBulletsBoss
-  shootingPoint: {fileID: 2677954764478899638}
   OnInitialize:
     m_PersistentCalls:
       m_Calls:
@@ -483,18 +481,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5891376629813950091}
-        m_TargetAssemblyTypeName: UnityEngine.AI.NavMeshAgent, UnityEngine
-        m_MethodName: set_isStopped
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8651602088336558062}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
@@ -607,6 +593,8 @@ MonoBehaviour:
           m_StringArgument: Idle
           m_BoolArgument: 0
         m_CallState: 2
+  enemyProyectil: EnemyBulletsBoss
+  shootingPoint: {fileID: 2677954764478899638}
 --- !u!114 &8269103543390996307
 MonoBehaviour:
   m_ObjectHideFlags: 0

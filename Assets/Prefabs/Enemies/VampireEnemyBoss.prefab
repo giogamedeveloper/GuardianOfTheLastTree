@@ -223,7 +223,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5912431562344635744}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: -902729914
   m_Radius: 0.8
   m_Speed: 3
@@ -444,19 +444,8 @@ MonoBehaviour:
   - {fileID: 8873602275038444333}
   active: 0
   targetTagName: Player
-  showGizmos: 1
   target: {fileID: 0}
-  damageAttack: 100
-  castAttack: {fileID: 268848533262794267}
   nav: {fileID: 7202206322024622565}
-  particles: {fileID: 107785295090895179}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  checkSize: 1.5
-  checkPlayer: {fileID: 8169857246165729260}
-  _isEnemyDetected: 0
-  delay: 0
   animator: {fileID: 2389161820933539620}
   attackDistance: 10
   OnInitialize:
@@ -573,18 +562,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2389161820933539620}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Idle
-          m_BoolArgument: 0
-        m_CallState: 2
+  damageAttack: 100
+  castAttack: {fileID: 268848533262794267}
+  particles: {fileID: 107785295090895179}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  checkSize: 1.5
+  checkPlayer: {fileID: 8169857246165729260}
+  _isEnemyDetected: 0
 --- !u!114 &1733901495436410470
 MonoBehaviour:
   m_ObjectHideFlags: 0

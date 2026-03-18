@@ -12712,7 +12712,6 @@ GameObject:
   - component: {fileID: 3707796681431355562}
   - component: {fileID: 6892444559972767092}
   - component: {fileID: 7156094118894222359}
-  - component: {fileID: 6319564849012002440}
   - component: {fileID: 8636238182740598070}
   - component: {fileID: 2181434738617851288}
   m_Layer: 7
@@ -12754,75 +12753,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2331ef9a99033604d80f93b47d1b44e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tankFX: {fileID: 0}
+  _tankFX: {fileID: 7156094118894222359}
+  _tankAiming: {fileID: 6892444559972767092}
+  _tankMovement: {fileID: 8636238182740598070}
+  _tankShooting: {fileID: 2181434738617851288}
   cheatsCanvasGroup: {fileID: 0}
-  dashParticlesL: {fileID: 5578136176657718473}
-  dashParticlesR: {fileID: 3131515565281686633}
-  showGizmos: 1
-  movementSpeed: 8
-  rotationSpeed: 15
-  acceleration: 10
-  jumpForce: 6
-  dashForce: 20
-  camRayLength: 100
-  pointerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   coins: 0
-  aimingPivot: {fileID: 7344395004951663539}
-  head: {fileID: 2150236614800849242}
-  shootDelay: 0.1
-  leftCanonPoint: {fileID: 7446608469097659920}
-  rightCanonPoint: {fileID: 291340230124106713}
-  bulletType: RegularBullets
-  missileShootingPoints:
-  - {fileID: 1075473967003988126}
-  missileDelay: 2
-  missileTime: 1
-  angleDetection: 45
-  rangeDetection: 50
-  missilePoolId: Missile
-  missileAimOffset: {x: 0, y: -2, z: 0}
-  minePoint: {fileID: 7233811840468753140}
-  mineTime: 2
-  mineDelay: 1
-  minePoolId: Mine
-  rb: {fileID: 8906305816644941094}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheck: {fileID: 3953617659552362972}
-  grounded: 0
-  groundCheckSize: {x: 0.6, y: 0.1, z: 0.6}
-  isWalk: 0
-  checkLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  checkPoint: {fileID: 795677424382684785}
-  checkSize: 1.5
-  checkDistance: 2
-  isWalled: 0
-  enmiesLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  checkSizeToEnemies: 20
   animator: {fileID: 2290180079454574838}
   coinText: {fileID: 0}
-  OnJumpSound:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7017526030146794142}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 0cf049392ed8ef349b757f848a09c97b, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   pauseMenu: {fileID: 0}
 --- !u!54 &8906305816644941094
 Rigidbody:
@@ -12965,7 +12903,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputController, Assembly-CSharp
-        m_MethodName: EnablePlayerInputs
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12977,7 +12915,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputController, Assembly-CSharp
-        m_MethodName: EnableUiInputs
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13013,6 +12951,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e821b36f710ca4884b14c0af879598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camRayLength: 5
+  pointerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  aimingPivot: {fileID: 1429297453829297359}
+  rotationSpeed: 14
 --- !u!114 &7156094118894222359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13028,19 +12972,8 @@ MonoBehaviour:
   tankEngineSound: {fileID: 0}
   tankBasePitch: 0.4
   tankMaxPitch: 3
-  dustParticles: []
---- !u!114 &6319564849012002440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015789320249404594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 138a6dd9f475bd547a4f2d3d385b1adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  dustParticles:
+  - {fileID: 6480634723812668530}
 --- !u!114 &8636238182740598070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13053,6 +12986,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bb0fdb721249448a9b9d942aeaabfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 8
+  rotationSpeed: 14
+  acceleration: 30
+  jumpForce: 10
+  dashForce: 10
+  dashParticlesL: {fileID: 5578136176657718473}
+  dashParticlesR: {fileID: 3131515565281686633}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheck: {fileID: 3953617659552362972}
+  groundCheckSize: {x: 0.6, y: 0.1, z: 0.6}
+  checkLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  checkPoint: {fileID: 795677424382684785}
+  checkSize: 1.5
+  checkDistance: 2
+  rb: {fileID: 8906305816644941094}
+  OnJumpSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7017526030146794142}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 0cf049392ed8ef349b757f848a09c97b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2181434738617851288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13065,6 +13032,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775f8948f2096d84498aaddcf11ac01f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootDelay: 0.5
+  bulletType: RegularBullets
+  leftCanonPoint: {fileID: 7446608469097659920}
+  rightCanonPoint: {fileID: 291340230124106713}
+  animator: {fileID: 2290180079454574838}
+  missileShootingPoints: []
+  missileDelay: 0.5
+  angleDetection: 45
+  rangeDetection: 50
+  missilePoolId: Missile
+  enemiesLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  checkSizeToEnemies: 1
+  missileAimOffset: {x: 0, y: -2, z: 0}
+  minePoint: {fileID: 7233811840468753140}
+  mineDelay: 0.5
+  minePoolId: Mine
 --- !u!1 &2031671604926040647
 GameObject:
   m_ObjectHideFlags: 0
@@ -53207,7 +53192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8083153073260071896
 Transform:
   m_ObjectHideFlags: 0
@@ -79317,7 +79302,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 0
   useUnscaledTime: 0

@@ -32,6 +32,7 @@ public abstract class EnemyBase : PoolEntity
 
     public override void Initialize()
     {
+        nav.enabled = true;
         base.Initialize();
         nav.Warp(transform.position);
         OnInitialize?.Invoke();
@@ -41,6 +42,7 @@ public abstract class EnemyBase : PoolEntity
     {
         if (nav != null && nav.isOnNavMesh)
             nav.ResetPath();
+        nav.enabled = false;
         base.Deactivate();
         OnDeactivate?.Invoke();
     }

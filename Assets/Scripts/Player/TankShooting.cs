@@ -5,7 +5,7 @@ public class TankShooting : MonoBehaviour
 {
     [Header("Shooting")]
     public float shootDelay = .5f;
-
+    [SerializeField] private Transform _aimTarget;
     public string bulletType = "RegularBullets";
     public Transform leftCanonPoint;
     public Transform rightCanonPoint;
@@ -44,14 +44,18 @@ public class TankShooting : MonoBehaviour
         if (_leftCanon)
         {
             animator.SetTrigger("Shoot Left");
+            Vector3 dirToTarget = (_aimTarget.position - leftCanonPoint.position).normalized;
+            dirToTarget.y = 0;
             PoolManager.instance.Pull(bulletType, leftCanonPoint.position,
-                Quaternion.LookRotation(leftCanonPoint.forward));
+                Quaternion.LookRotation(dirToTarget));
         }
         else
         {
             animator.SetTrigger("Shoot Right");
+            Vector3 dirToTarget = (_aimTarget.position - rightCanonPoint.position).normalized;
+            dirToTarget.y = 0;
             PoolManager.instance.Pull(bulletType, rightCanonPoint.position,
-                Quaternion.LookRotation(rightCanonPoint.forward));
+                Quaternion.LookRotation(dirToTarget));
         }
         animator.SetFloat("ShootSpeed", 1 / shootDelay);
         _shootTime = Time.time + shootDelay;
