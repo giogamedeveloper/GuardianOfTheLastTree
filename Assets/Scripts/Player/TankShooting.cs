@@ -43,7 +43,6 @@ public class TankShooting : MonoBehaviour
         if (Time.time < _shootTime) return;
         if (_leftCanon)
         {
-            animator.SetTrigger("Shoot Left");
             Vector3 dirToTarget = (_aimTarget.position - leftCanonPoint.position).normalized;
             dirToTarget.y = 0;
             PoolManager.instance.Pull(bulletType, leftCanonPoint.position,
@@ -51,13 +50,11 @@ public class TankShooting : MonoBehaviour
         }
         else
         {
-            animator.SetTrigger("Shoot Right");
             Vector3 dirToTarget = (_aimTarget.position - rightCanonPoint.position).normalized;
             dirToTarget.y = 0;
             PoolManager.instance.Pull(bulletType, rightCanonPoint.position,
                 Quaternion.LookRotation(dirToTarget));
         }
-        animator.SetFloat("ShootSpeed", 1 / shootDelay);
         _shootTime = Time.time + shootDelay;
         _leftCanon = !_leftCanon;
     }

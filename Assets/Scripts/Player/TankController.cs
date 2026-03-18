@@ -86,8 +86,8 @@ public class TankController : MonoBehaviour, IPlayerActions
 
     private void AnimationFeed()
     {
-        animator.SetBool("Is Grounded", _tankMovement.isGrounded);
-        animator.SetBool("Start Walk", _tankMovement.isWalk);
+        animator.SetFloat("Speed", _tankMovement.NormalizedSpeed, 0.1f, Time.deltaTime);
+        animator.SetBool("IsGrounded", _tankMovement.isGrounded);
     }
 
     public void UpdateCoinsCollected()

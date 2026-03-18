@@ -25,8 +25,7 @@ public class AudioController : MonoBehaviour
     [SerializeField]
     private AudioSource musicAudioSource;
 
-    private static AudioController _instance;
-    public static AudioController Instance => _instance;
+    public static AudioController Instance { get; private set; }
 
 
     [SerializeField]
@@ -51,21 +50,17 @@ public class AudioController : MonoBehaviour
 
     void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this;
-            generalVolume = PlayerPrefs.GetFloat("GeneralMusic", 1f);
-            musicVolume = PlayerPrefs.GetFloat("Music", 1f);
-            sfxVolume = PlayerPrefs.GetFloat("SFX", 1f);
-
-            ApplyAllVolumes(); // ✅ Nuevo método para aplicar todos los volúmenes
-            // DontDestroyOnLoad(gameObject); // ✅ Importante para persistir entre escenas
-        }
-        else
+        if (Instance != this && Instance != null)
         {
             Destroy(gameObject);
-
+            return;
         }
+        Instance = this;
+        ApplyAllVolumes(); // ✅ Nuevo método para aplicar todos los volúmenes
+        generalVolume = PlayerPrefs.GetFloat("GeneralMusic", 1f);
+        musicVolume = PlayerPrefs.GetFloat("Music", 1f);
+        sfxVolume = PlayerPrefs.GetFloat("SFX", 1f);
+
         SetMusicForScene(SceneManager.GetActiveScene().name);
         if (!musicAudioSource.isPlaying)
             musicAudioSource.Play();

@@ -6,24 +6,41 @@ public class TankMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float movementSpeed = 8f;
+
     public float rotationSpeed = 14f;
     public float acceleration = 30f;
+
+    private float _runTimer = 0f;
+
+    public float NormalizedSpeed
+    {
+        get
+        {
+            float speed = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z).magnitude;
+
+            if (speed < 0.1f) return 0f; // Idle
+            return Mathf.Lerp(0.4f, 1f, speed / movementSpeed);
+        }
+    }
 
     [Header("Jump")]
     public float jumpForce = 10f;
 
     [Header("Dash")]
     public float dashForce = 10f;
+
     public ParticleSystem dashParticlesL;
     public ParticleSystem dashParticlesR;
 
     [Header("Ground Check")]
     public LayerMask groundLayer;
+
     public Transform groundCheck;
     public Vector3 groundCheckSize;
 
     [Header("Collision Pre Detection")]
     public LayerMask checkLayer;
+
     public Transform checkPoint;
     public float checkSize = .3f;
     [Range(0, 3)] public float checkDistance = 2f;
