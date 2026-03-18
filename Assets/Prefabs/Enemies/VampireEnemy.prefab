@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe045c6581902147a96e5db67b0981b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolId: 
+  poolId: VampireEnemy
   renderers:
   - {fileID: 5882394253615298673}
   - {fileID: 106777063169883611}
@@ -431,19 +431,8 @@ MonoBehaviour:
   - {fileID: 8873602275038444333}
   active: 0
   targetTagName: Player
-  showGizmos: 1
   target: {fileID: 0}
-  damageAttack: 5
-  castAttack: {fileID: 268848533262794267}
   nav: {fileID: 7202206322024622565}
-  particles: {fileID: 107785295090895179}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  checkSize: 1.5
-  checkPlayer: {fileID: 8169857246165729260}
-  _isEnemyDetected: 0
-  delay: 0
   animator: {fileID: 2389161820933539620}
   attackDistance: 10
   OnInitialize:
@@ -536,18 +525,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7202206322024622565}
-        m_TargetAssemblyTypeName: UnityEngine.AI.NavMeshAgent, UnityEngine
-        m_MethodName: set_isStopped
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 7307859893526168325}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
         m_MethodName: Stop
@@ -608,6 +585,15 @@ MonoBehaviour:
           m_StringArgument: Idle
           m_BoolArgument: 0
         m_CallState: 2
+  damageAttack: 5
+  castAttack: {fileID: 268848533262794267}
+  particles: {fileID: 107785295090895179}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  checkSize: 1.5
+  checkPlayer: {fileID: 8169857246165729260}
+  _isEnemyDetected: 0
 --- !u!1 &7109401568035302945
 GameObject:
   m_ObjectHideFlags: 0

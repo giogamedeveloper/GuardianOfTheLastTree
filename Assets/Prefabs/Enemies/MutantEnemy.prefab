@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d833578edbb30bb4bb850edc4b58880a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolId: 
+  poolId: MutantEnemy
   renderers:
   - {fileID: 7803328411254967575}
   - {fileID: 6037533766480332395}
@@ -398,19 +398,8 @@ MonoBehaviour:
   - {fileID: 284186460964235169}
   active: 0
   targetTagName: Player
-  showGizmos: 1
   target: {fileID: 0}
-  damageAttack: 20
   nav: {fileID: 2417011981605870508}
-  particles: {fileID: 6038719239868468851}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  checkSize: 1
-  checkPlayer: {fileID: 3019116115847922900}
-  _isEnemyDetected: 0
-  delay: 1
-  _isBoss: 0
   animator: {fileID: 4563679530741825924}
   attackDistance: 10
   OnInitialize:
@@ -503,18 +492,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2417011981605870508}
-        m_TargetAssemblyTypeName: UnityEngine.AI.NavMeshAgent, UnityEngine
-        m_MethodName: set_isStopped
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 6669231434665428516}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
         m_MethodName: Stop
@@ -551,6 +528,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  damageAttack: 20
+  particles: {fileID: 6038719239868468851}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  checkSize: 1
+  checkPlayer: {fileID: 3019116115847922900}
+  _isEnemyDetected: 0
+  delay: 1
+  _isBoss: 0
 --- !u!114 &593409753369523367
 MonoBehaviour:
   m_ObjectHideFlags: 0
