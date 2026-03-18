@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using UnityEngine;
 using static InputSystem_Actions;
@@ -31,22 +32,24 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private CanvasGroup _statCanvasGroup;
 
-    private static GameManager _instance;
-    public static GameManager Instance => _instance;
+    public static GameManager Instance { get; private set; }
 
+
+    void Awake()
+    {
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (_instance == null)
-        {
-            _instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        _isTutorialOn = TutorialController.Instance.isTutorialOn;
+        if (TutorialController.Instance != null)
+            _isTutorialOn = TutorialController.Instance.isTutorialOn;
         Time.timeScale = 1;
         bossDead = false;
         if (attackVampire == null)

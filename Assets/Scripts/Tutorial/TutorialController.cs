@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TutorialController : MonoBehaviour
@@ -12,8 +14,7 @@ public class TutorialController : MonoBehaviour
     private int activateStats = 0;
     private int currentStep = 0;
     public bool isTutorialOn = false;
-    private static TutorialController _instance;
-    public static TutorialController Instance => _instance;
+    public static TutorialController Instance { get; private set; }
 
     [SerializeField]
     private GameObject objetivoMoverse;
@@ -33,12 +34,19 @@ public class TutorialController : MonoBehaviour
     bool hasLanzadoMisil;
     bool hasPuestoMina;
 
+    void Awake()
+    {
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
     void Start()
     {
-        if (_instance == null)
-            _instance = this;
-        else
-            Destroy(gameObject);
+
         if (_menuManager == null)
             _menuManager = GetComponent<MenuManager>();
         isTutorialOn = true;

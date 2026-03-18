@@ -43,6 +43,7 @@ public class Mine : PoolEntity
     /// </summary>
     void Update()
     {
+        if (!active) return;
         /*Si se termina el tiempo de vida, lo devovemos a la pool.
         Le damos margen de 1 seg para permitir completar la treyectoria.
         En otro caso podría llegar al destino a la vez que termina su tiempo y no explotar.*/
@@ -62,6 +63,8 @@ public class Mine : PoolEntity
     /// <param name="other"></param>
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"Mine trigger - active: {active} - other: {other.name} - time: {Time.time}");
+        if (!active) return;
         StartCoroutine(TimeToWaitToExplote(other, 5));
     }
 
@@ -101,6 +104,7 @@ public class Mine : PoolEntity
     [ContextMenu("Initialize")]
     public override void Initialize()
     {
+        Debug.Log($"Mine Initialize - Time: {Time.time}");
         base.Initialize();
         _lifeTimer = 10f;
         OnInitialize?.Invoke();
